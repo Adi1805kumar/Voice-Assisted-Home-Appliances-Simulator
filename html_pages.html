@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice-Assisted Home Appliances Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Voice-Assisted Home Appliances Simulator</h1>
+    <div class="appliances" id="appliances">
+      <div class="appliance off" id="light">
+        <h2>Light</h2>
+        <p class="status">Status: Off</p>
+      </div>
+      <div class="appliance off" id="fan">
+        <h2>Fan</h2>
+        <p class="status">Status: Off</p>
+      </div>
+      <div class="appliance off" id="tv">
+        <h2>TV</h2>
+        <p class="status">Status: Off</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onclick="startListening()">Start Voice Command</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
