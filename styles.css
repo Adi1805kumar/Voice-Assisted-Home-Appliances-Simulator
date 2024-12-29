@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #4a90e2;
+  }
+  
+  .appliances {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .appliance {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .appliance.on {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+    transform: scale(1.1);
+  }
+  
+  .appliance.off {
+    border-color: #f44336;
+    background-color: #ffebee;
+    transform: scale(1);
+  }
+  
+  .appliance:hover {
+    transform: scale(1.05);
+    background-color: #d3e0f5;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .appliance h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .status {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #357ab7;
+    transform: scale(1.1);
+  }
